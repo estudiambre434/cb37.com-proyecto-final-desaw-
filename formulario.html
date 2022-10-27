@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORMULARIO</title>
+    </head>
+    <body>
+        <center>
+        <center><a href="inicio.html">Regresar </a></center>
+        <center><h2>Formularo de clientes</h2></center>
+         <form action="lopez.paulino.cb37@gmail.com "medthod="post" cnctyoe="text/plain">
+             <strong>Nombre:<br> </strong>
+             <input type="text" name="Correo"><br>
+             <br>
+             <strong>Opinion:<br> </strong>
+             <input type="text" class="opinion" name="opinion"><br>
+             <input type="reset" value="Reiniciar">
+
+
+             </form>
+              <h2><Font color="black"><button><a href="#" onclick="enviarCorreo('Eres muy feo')">Enviar datos</a></button></h2></font>
+
+	<script>
+	/**
+	 * Método que envía un e-mail a través del cliente que tenga por defecto
+	 * @param  {String} insTextoComp Texto que aparecerá dentro del mensaje
+	 */
+	function enviarCorreo(insTextoComp) {
+		var sEmail = prompt("¿A quien quieres enviarlo?", "E-mail");
+		if(sEmail != null) {
+			var sLink = "mailto:" + escape(sEmail)
+			 + "?subject=" + escape("Te han compartirdo el siguente texto")
+			 + "&body=" + insTextoComp;
+			window.location.href = sLink;
+		}
+	}
+	</script>
+</body>
+
+             <style>
+                 body{ 
+                     background-color: coral;
+                 }
+             </style>
+ 
+            </center>
+    </body>
+    
+</html>
